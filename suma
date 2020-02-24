@@ -1,0 +1,61 @@
+#include <iostream>
+  int main()
+#include <iostream>
+  int main()
+  {
+  using std::cout; // el programa usa cout
+  using std::cin; // el programa usa cin
+  using std::endl; // el programa usa endl
+  
+  int numero1;
+  int numero2;
+  int numero3;
+  int suma;
+  float promedio;
+  int producto;
+ 
+  std::cout << "Escriba el primer entero: ";
+  std::cin >> numero1;
+ 
+  std::cout << "Escriba el segundo entero: ";
+  std::cin >> numero2;
+  
+  std::cout << "Escriba el tercer entero: "; 
+  std::cin >> numero3; 
+ 
+  suma = numero1 + numero2 + numero3;
+  std::cout << "La suma es: " << suma << std::endl;
+  
+  promedio = suma/3; 
+  std::cout << "El Promedio es: " << promedio << std::endl;
+  
+  producto = numero1 * numero2 * numero3; 
+  std::cout << "El Prducto es: " << producto << std::endl;
+ 
+ 
+  //COMPARACION DE LOS 3 NUMEROS "NUMERO MAYOR"
+ if(numero1 > numero2 && numero1 > numero3){
+    std::cout<<"El numero mayor es: "<<numero1;
+    }else{
+        if(numero2 > numero1 && numero2 > numero3){
+        std::cout<<"El numero mayor es: "<<numero2;
+        
+        }else{
+            if(numero3>numero1 && numero3>numero2){
+        std::cout<<"El numero mayor es: "<<numero3<< std::endl;
+        }
+    }
+    }
+ if(numero1 < numero2 && numero1 < numero3){
+    std::cout<<"El numero menor es: "<<numero1<< std::endl;
+    }else{
+        if(numero2 < numero1 && numero2 < numero3){
+        std::cout<<"El numero menor es: "<<numero2<< std::endl;
+        
+        }else{
+            if(numero3<numero1 && numero3<numero2){
+        std::cout<<"El numero menor es: "<<numero3<< std::endl;
+        }
+    }
+    }
+  }
